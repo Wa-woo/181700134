@@ -122,7 +122,7 @@ def Lu(string):
 
 ###############门牌号#################
 def Meng(string):
-    meng=re.search("(.*?楼)|(.*?号)",string)
+    meng=re.search("(.*?号)|(.*?楼)",string)
     if(meng!=None):
         return meng.group(0)
     else:
